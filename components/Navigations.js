@@ -1,5 +1,6 @@
 import { NAVIGATIONS } from 'data/NAVIGATION';
 import Anchor from './Anchor';
+import { TextLogo } from './Text';
 
 const Navigation = ({ children, link, isActive }) => {
   return (
@@ -18,24 +19,12 @@ const Navigation = ({ children, link, isActive }) => {
   );
 };
 
-const Title = ({ children }) => {
-  return (
-    <div className="flex-center-both gap-2">
-      <div className="bg-white-primary h-2 w-2 rounded-full" />
-      <h1 className="text-white-primary font-semibold text-3xl leading-10 text-center">
-        {children}
-      </h1>
-      <div className="bg-white-primary h-2 w-2 rounded-full" />
-    </div>
-  );
-};
-
 export default function Navigations() {
   return (
-    <div className="bg-black-primary rounded-[54px] py-8 px-[60px] max-w-7xl w-[87vw] fixed z-10 center-horizontal top-8 flex-center-both gap-20">
+    <div className="bg-black-primary rounded-[54px] py-8 px-[60px] max-w-7xl w-[87vw] fixed z-10 center-horizontal top-8 flex-center-both gap-20 shadow-lg">
       {NAVIGATIONS.map((navigation) =>
         navigation.isTitle ? (
-          <Title key={navigation.label}>{navigation.label}</Title>
+          <TextLogo key={navigation.label}>{navigation.label}</TextLogo>
         ) : (
           <Navigation
             key={navigation.label}
