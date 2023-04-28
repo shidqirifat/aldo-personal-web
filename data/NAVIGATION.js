@@ -2,7 +2,6 @@ export const NAVIGATIONS = [
   {
     label: 'Home',
     link: '#home',
-    isActive: true,
   },
   {
     label: 'About',

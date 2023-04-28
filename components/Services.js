@@ -5,14 +5,11 @@ import { SERVICES } from 'data/SERVICE';
 
 export default function Services() {
   return (
-    <div
-      id="services"
-      className="bg-black-primary rounded-b-[60px] pt-32 pb-20"
-    >
+    <div id="services" className="bg-black-primary rounded-b-[60px] pt-32">
       <h1 className="font-semibold text-[80px] leading-[120px] text-white-primary text-center">
         What can I do for you
       </h1>
-      <div className="grid grid-cols-3 gap-6 max-w-7xl mx-auto mt-16 mb-20">
+      <div className="grid grid-cols-3 gap-6 max-w-7xl mx-auto mt-16 pb-20">
         {SERVICES.map((service) => (
           <div
             key={service.title}

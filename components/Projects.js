@@ -85,10 +85,10 @@ export default function Projects() {
 
   return (
     <>
-      <div className="-mt-[60px] h-[60px] bg-white-primary relative -z-10" />
+      <div className="-mt-[60px] h-[90px] bg-white-primary relative -z-10" />
       <div
         id="projects"
-        className="bg-white-primary rounded-b-[60px] pb-[60px] pt-[220px]"
+        className="bg-white-primary rounded-b-[60px] pb-[60px] -mt-6 pt-[160px]"
       >
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between mb-[60px]">

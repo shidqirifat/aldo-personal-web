@@ -1,6 +1,7 @@
 import { NAVIGATIONS } from 'data/NAVIGATION';
 import Anchor from './Anchor';
 import { TextLogo } from './Text';
+import useNavigation from 'hooks/useNavigation';
 
 const Navigation = ({ children, link, isActive }) => {
   return (
@@ -20,6 +21,8 @@ const Navigation = ({ children, link, isActive }) => {
 };
 
 export default function Navigations() {
+  const [activeNavigation] = useNavigation();
+
   return (
     <div className="bg-black-primary rounded-[54px] py-8 px-[60px] max-w-7xl w-[87vw] fixed z-20 center-horizontal top-8 flex-center-both gap-20 shadow-lg">
       {NAVIGATIONS.map((navigation) =>
@@ -29,7 +32,7 @@ export default function Navigations() {
           <Navigation
             key={navigation.label}
             link={navigation.link}
-            isActive={navigation.isActive}
+            isActive={activeNavigation === navigation.link}
           >
             {navigation.label}
           </Navigation>
