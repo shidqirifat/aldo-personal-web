@@ -18,7 +18,7 @@ const ContactAnchor = ({ children, className = '', href }) => {
 
 export default function ContactUs() {
   return (
-    <div className="mt-[120px] mb-20 max-w-7xl mx-auto">
+    <div id="contacts" className="mt-[120px] mb-20 max-w-7xl mx-auto">
       <div className="flex gap-[178px] items-end justify-between">
         <div>
           <h1 className="font-semibold text-[80px] leading-[120px] text-white-primary">

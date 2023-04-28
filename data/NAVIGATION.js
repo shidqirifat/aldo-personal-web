@@ -10,7 +10,7 @@ export const NAVIGATIONS = [
   },
   {
     label: 'Service',
-    link: '#service',
+    link: '#services',
   },
   {
     isTitle: true,
@@ -22,10 +22,10 @@ export const NAVIGATIONS = [
   },
   {
     label: 'Project',
-    link: '#project',
+    link: '#projects',
   },
   {
     label: 'Contact',
-    link: '#contact',
+    link: '#contacts',
   },
 ];

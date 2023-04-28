@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Anchor({ href, className, isExternal, children }) {
   return (
-    <Link href={href} passHref legacyBehavior>
+    <Link href={href} passHref legacyBehavior scroll={false}>
       <a
         href={href}
         target={isExternal ? '_blank' : '_self'}

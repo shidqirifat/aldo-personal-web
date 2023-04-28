@@ -5,7 +5,10 @@ import { SERVICES } from 'data/SERVICE';
 
 export default function Services() {
   return (
-    <div className="bg-black-primary rounded-b-[60px] pt-32 pb-20">
+    <div
+      id="services"
+      className="bg-black-primary rounded-b-[60px] pt-32 pb-20"
+    >
       <h1 className="font-semibold text-[80px] leading-[120px] text-white-primary text-center">
         What can I do for you
       </h1>
