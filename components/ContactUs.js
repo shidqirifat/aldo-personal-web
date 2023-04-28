@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { Paragraph, TextLogo } from './Text';
 import Anchor from './Anchor';
-import { CONTACTS, SOCIALS } from 'data/CONTACTS';
+import { CONTACTS, SOCIALS } from 'data/CONTACT';
 
 const ContactAnchor = ({ children, className = '', href }) => {
   return (

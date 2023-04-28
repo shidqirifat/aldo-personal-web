@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from './Button';
 import { Paragraph } from './Text';
+import Email from 'public/assets/icons/email.svg';
+import Image from 'next/image';
 
 const TextButton = ({ isPrimary, children }) => {
   return (
@@ -38,9 +40,12 @@ export default function Hero() {
             </TextButton>
           </Button>
           <Button>
-            <TextButton>
-              <Bold>EMail</Bold> me
-            </TextButton>
+            <div className="flex items-center gap-[10px]">
+              <Image src={Email} alt="See more icon" width={26} height={26} />
+              <TextButton>
+                <Bold>EMail</Bold> me
+              </TextButton>
+            </div>
           </Button>
         </div>
       </div>

@@ -34,3 +34,11 @@ body {
 .center-both {
   @apply top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%];
 }
+
+.project-item .icon-arrow {
+  background: url('/assets/icons/arrow-inactive.svg') no-repeat center;
+}
+
+.project-item:hover .icon-arrow {
+  background-image: url('/assets/icons/arrow-active.svg');
+}

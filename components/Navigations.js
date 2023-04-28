@@ -21,7 +21,7 @@ const Navigation = ({ children, link, isActive }) => {
 
 export default function Navigations() {
   return (
-    <div className="bg-black-primary rounded-[54px] py-8 px-[60px] max-w-7xl w-[87vw] fixed z-10 center-horizontal top-8 flex-center-both gap-20 shadow-lg">
+    <div className="bg-black-primary rounded-[54px] py-8 px-[60px] max-w-7xl w-[87vw] fixed z-20 center-horizontal top-8 flex-center-both gap-20 shadow-lg">
       {NAVIGATIONS.map((navigation) =>
         navigation.isTitle ? (
           <TextLogo key={navigation.label}>{navigation.label}</TextLogo>
