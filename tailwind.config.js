@@ -6,7 +6,19 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'black-primary': '#0A0A0A',
+        'black-secondary': '#0A0A0A99',
+        'orange-primary': '#FF8132',
+        'white-primary': '#FFFFFF',
+        'white-secondary': '#FFFFFFCC',
+      },
+      fontFamily: {
+        inter: "'Inter', sans-serif",
+        poppins: "'Poppins', sans-serif",
+      },
+    },
   },
   plugins: [],
 };

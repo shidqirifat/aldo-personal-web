@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  @apply m-0 p-0 box-border;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply w-full min-h-screen bg-black-primary;
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.flex-center-both {
+  @apply flex items-center justify-center;
+}
+
+.flex-center-horizontal {
+  @apply flex items-center;
+}
+
+.center-horizontal {
+  @apply left-[50%] translate-x-[-50%];
+}
+
+.center-both {
+  @apply top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%];
+}
