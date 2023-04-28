@@ -13,6 +13,7 @@ module.exports = {
         'orange-primary': '#FF8132',
         'white-primary': '#FFFFFF',
         'white-secondary': '#FFFFFFCC',
+        'grey-primary': '#0A0A0A3D',
       },
       fontFamily: {
         inter: "'Inter', sans-serif",
