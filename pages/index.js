@@ -5,7 +5,7 @@ import Services from 'components/Services';
 import ContactUs from 'components/ContactUs';
 import Projects from 'components/Projects';
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Navigations />

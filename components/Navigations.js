@@ -32,7 +32,7 @@ export default function Navigations() {
           <Navigation
             key={navigation.label}
             link={navigation.link}
-            isActive={activeNavigation === navigation.link}
+            isActive={activeNavigation === navigation.anchor}
           >
             {navigation.label}
           </Navigation>

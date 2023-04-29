@@ -9,7 +9,8 @@ export default function useNavigation() {
     const navigations = [];
 
     NAVIGATIONS.forEach((nav) => {
-      const element = document.querySelector(nav.link);
+      if (!nav.anchor) return;
+      const element = document.querySelector(nav.anchor);
       if (!element) return;
 
       navigations.push(element);

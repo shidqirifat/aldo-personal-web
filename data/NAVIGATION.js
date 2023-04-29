@@ -1,15 +1,18 @@
 export const NAVIGATIONS = [
   {
     label: 'Home',
-    link: '#home',
+    anchor: '#home',
+    link: '/#home',
   },
   {
     label: 'About',
-    link: '#about',
+    anchor: '#about',
+    link: '/about#about',
   },
   {
     label: 'Service',
-    link: '#services',
+    anchor: '#services',
+    link: '/#services',
   },
   {
     isTitle: true,
@@ -17,14 +20,17 @@ export const NAVIGATIONS = [
   },
   {
     label: 'Resume',
-    link: '#resume',
+    anchor: '#resume',
+    link: '/#resume',
   },
   {
     label: 'Project',
-    link: '#projects',
+    anchor: '#projects',
+    link: '/#projects',
   },
   {
     label: 'Contact',
-    link: '#contacts',
+    anchor: '#contacts',
+    link: '/#contacts',
   },
 ];
