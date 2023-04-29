@@ -7,7 +7,7 @@ import RoundedBottom from './RoundedBottom';
 export default function Services() {
   return (
     <>
-      <div id="services" className="bg-black-primary pt-32">
+      <div id="services" className="background-pattern pt-32">
         <h1 className="font-semibold text-[80px] leading-[120px] text-white-primary text-center">
           What can I do for you
         </h1>

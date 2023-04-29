@@ -27,3 +27,10 @@ export const CONTACTS = [
     link: 'https://api.whatsapp.com/send?phone=6281291142798',
   },
 ];
+
+export const CONTENT = {
+  start: 'Let’s start',
+  together: 'project together?',
+  collaborate: `Contact me for questions, collaboration, conversation, or just
+  saying hello. Thank you for stopping by here.`,
+};

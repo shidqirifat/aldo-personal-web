@@ -42,3 +42,7 @@ body {
 .project-item:hover .icon-arrow {
   background-image: url('/assets/icons/arrow-active.svg');
 }
+
+.background-pattern {
+  background: url('/assets/images/background-pattern.png') #0A0A0A;
+}

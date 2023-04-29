@@ -9,7 +9,9 @@ export default function RoundedBottom({ isRoundedWhite }) {
     >
       <div
         className={`h-full rounded-b-[60px] ${
-          isRoundedWhite ? 'bg-white-primary' : 'bg-black-primary'
+          isRoundedWhite
+            ? 'bg-white-primary'
+            : 'bg-black-primary background-pattern'
         }`}
       />
     </div>
