@@ -2,6 +2,7 @@ import { NAVIGATIONS } from 'data/NAVIGATION';
 import Anchor from './Anchor';
 import { TextLogo } from './Text';
 import useNavigation from 'hooks/useNavigation';
+import useMediaQueries from 'hooks/useMediaQueries';
 
 const Navigation = ({ children, link, isActive }) => {
   return (
@@ -22,6 +23,7 @@ const Navigation = ({ children, link, isActive }) => {
 
 export default function Navigations() {
   const [activeNavigation] = useNavigation();
+  useMediaQueries();
 
   return (
     <div className="bg-black-primary rounded-[54px] py-8 px-[60px] max-w-7xl w-[87vw] fixed z-20 center-horizontal top-8 flex-center-both gap-20 shadow-lg">

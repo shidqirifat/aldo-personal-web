@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import { Provider } from 'react-redux';
+import store from 'states';
 import 'styles/globals.css';
 
 export default function App({ Component, pageProps }) {
@@ -13,7 +15,9 @@ export default function App({ Component, pageProps }) {
           href="/favicon.svg"
         ></link>
       </Head>
-      <Component {...pageProps} />
+      <Provider store={store}>
+        <Component {...pageProps} />
+      </Provider>
     </>
   );
 }
