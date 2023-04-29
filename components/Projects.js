@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Paragraph } from './Text';
 import SeeMore from 'public/assets/icons/see-more.svg';
 import Anchor from './Anchor';
+import RoundedBottom from './RoundedBottom';
 
 const ToggleCategory = ({ children, isActive, onClick }) => {
   return (
@@ -57,9 +58,13 @@ const Project = ({ title, description, categories, image, link }) => {
   );
 };
 
-const MoreButton = () => {
+const MoreButton = ({ isExploration }) => {
+  const link = isExploration
+    ? 'https://dribbble.com/raffialdo'
+    : 'https://medium.com/@raffialdo123';
+
   return (
-    <Anchor href="https://dribbble.com/raffialdo" isExternal>
+    <Anchor href={link} isExternal>
       <Button isPrimary className="mx-auto block mt-[60px]">
         <div className="flex items-center gap-3">
           <h4 className="text-[22px] leading-8 text-white-primary font-medium">
@@ -85,11 +90,7 @@ export default function Projects() {
 
   return (
     <>
-      <div className="-mt-[60px] h-[90px] bg-white-primary relative -z-10" />
-      <div
-        id="projects"
-        className="bg-white-primary rounded-b-[60px] pb-[60px] -mt-6 pt-[160px]"
-      >
+      <div id="projects" className="bg-white-primary pt-[120px]">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between mb-[60px]">
             <h1 className="text-black-primary font-semibold text-[80px] leading-[120px]">
@@ -112,9 +113,10 @@ export default function Projects() {
               <Project key={project.title} {...project} />
             ))}
           </div>
-          <MoreButton />
+          <MoreButton isExploration={activeCategory === typesProject[0]} />
         </div>
       </div>
+      <RoundedBottom isRoundedWhite />
     </>
   );
 }
