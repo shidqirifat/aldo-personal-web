@@ -3,7 +3,7 @@ import React from 'react';
 export default function RoundedBottom({ isRoundedWhite }) {
   return (
     <div
-      className={`h-[60px] ${
+      className={`h-6 md:h-[60px] ${
         isRoundedWhite ? 'bg-black-primary' : 'bg-white-primary'
       }`}
     >

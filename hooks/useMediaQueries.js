@@ -7,9 +7,11 @@ const checkDisplaySize = (widthWindow) => {
     small: false,
     medium: false,
     large: false,
+    extraLarge: false,
   };
 
-  if (widthWindow > 1100) return { ...width, large: true };
+  if (widthWindow > 1280) return { ...width, extraLarge: true };
+  if (widthWindow > 1024) return { ...width, large: true };
   if (widthWindow > 640) return { ...width, medium: true };
   return { ...width, small: true };
 };

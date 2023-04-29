@@ -2,47 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  @apply m-0 p-0 box-border;
-}
+@layer utilities {
+  * {
+    @apply m-0 p-0 box-border;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  @apply w-full min-h-screen bg-black-primary;
-  font-family: 'Poppins', sans-serif;
-}
+  body {
+    @apply w-full min-h-screen bg-black-primary;
+    font-family: 'Poppins', sans-serif;
+  }
 
-.font-inter {
-  font-family: 'Inter', sans-serif;
-}
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
 
-.flex-center-both {
-  @apply flex items-center justify-center;
-}
+  .flex-center-both {
+    @apply flex items-center justify-center;
+  }
 
-.flex-center-horizontal {
-  @apply flex items-center;
-}
+  .flex-center-horizontal {
+    @apply flex items-center;
+  }
 
-.center-horizontal {
-  @apply left-[50%] translate-x-[-50%];
-}
+  .center-horizontal {
+    @apply left-[50%] translate-x-[-50%];
+  }
 
-.center-both {
-  @apply top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%];
-}
+  .center-both {
+    @apply top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%];
+  }
 
-.project-item .icon-arrow {
-  background: url('/assets/icons/arrow-inactive.svg') no-repeat center;
-}
+  .project-item .icon-arrow {
+    @apply bg-[url('/assets/icons/arrow-inactive-small.svg')] md:bg-[url('/assets/icons/arrow-inactive.svg')] bg-no-repeat bg-center;
+  }
 
-.project-item:hover .icon-arrow {
-  background-image: url('/assets/icons/arrow-active.svg');
-}
+  .project-item:hover .icon-arrow {
+    @apply bg-[url('/assets/icons/arrow-active-small.svg')] md:bg-[url('/assets/icons/arrow-active.svg')];
+  }
 
-.background-pattern {
-  background: url('/assets/images/background-pattern.png') #0A0A0A;
+  .background-pattern {
+    background: url('/assets/images/background-pattern.png') #0a0a0a;
+  }
 }
