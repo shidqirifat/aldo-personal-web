@@ -21,3 +21,19 @@ export const TextLogo = ({ children }) => {
     </div>
   );
 };
+
+export const TextButton = ({ isPrimary, children }) => {
+  return (
+    <h3
+      className={`font-medium text-sm sm:text-[22px] leading-5 md:leading-8 ${
+        isPrimary ? 'text-white-primary' : 'text-orange-primary'
+      }`}
+    >
+      {children}
+    </h3>
+  );
+};
+
+export const Bold = ({ children }) => (
+  <span className="font-bold">{children}</span>
+);

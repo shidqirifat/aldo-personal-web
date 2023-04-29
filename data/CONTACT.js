@@ -1,30 +1,32 @@
+import { GLOBAL_DATA } from './CONFIG';
+
 export const SOCIALS = [
   {
     text: 'Instagram',
-    link: 'https://www.instagram.com/raffialdo_/',
+    link: GLOBAL_DATA.instagram,
   },
   {
     text: 'Linkedln',
-    link: 'https://www.linkedin.com/in/raffialdo-bayu-anggara',
+    link: GLOBAL_DATA.linkedin,
   },
   {
     text: 'Dribbble',
-    link: 'https://dribbble.com/raffialdo',
+    link: GLOBAL_DATA.dribble,
   },
   {
     text: 'Medium',
-    link: 'https://medium.com/@raffialdo123',
+    link: GLOBAL_DATA.medium,
   },
 ];
 
 export const CONTACTS = [
   {
-    text: 'raffialdo123@gmail.com',
-    link: 'mailto:raffialdo123@gmail.com',
+    text: GLOBAL_DATA.email,
+    link: `mailto:${GLOBAL_DATA.email}`,
   },
   {
-    text: '+62 812 9114 2798',
-    link: 'https://api.whatsapp.com/send?phone=6281291142798',
+    text: GLOBAL_DATA.phone_number_with_space,
+    link: `https://api.whatsapp.com/send?phone=${GLOBAL_DATA.phone_number}`,
   },
 ];
 

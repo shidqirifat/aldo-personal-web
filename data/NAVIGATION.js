@@ -1,3 +1,5 @@
+import { GLOBAL_DATA } from './CONFIG';
+
 export const NAVIGATIONS = [
   {
     label: 'Home',
@@ -20,8 +22,8 @@ export const NAVIGATIONS = [
   },
   {
     label: 'Resume',
-    anchor: '#resume',
-    link: '/#resume',
+    link: GLOBAL_DATA.resume,
+    isExternal: true,
   },
   {
     label: 'Project',
@@ -31,6 +33,6 @@ export const NAVIGATIONS = [
   {
     label: 'Contact',
     anchor: '#contacts',
-    link: '/#contacts',
+    link: '#contacts',
   },
 ];

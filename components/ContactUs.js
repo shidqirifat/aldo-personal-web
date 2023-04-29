@@ -24,14 +24,14 @@ export default function ContactUs() {
     <div id="contacts" className="background-pattern">
       <div className="mt-8 md:mt-14 lg:pt-[120px] pb-6 lg:pb-20 max-w-7xl mx-6 xl:mx-auto">
         <div className="flex flex-col lg:flex-row gap-6 md:gap-20 lg:gap-[178px] items-center lg:items-end justify-between">
-          <div>
+          <div className="text-center md:text-left">
             <h1 className="font-semibold text-[32px] md:text-[80px] leading-[48px] md:leading-[120px] text-white-primary">
               {content.start} <br /> {content.together}
             </h1>
-            <Paragraph className="text-white-secondary mt-2 md:mt-6 mb-4 md:mb-10 w-[80%] lg:w-full">
+            <Paragraph className="text-white-secondary mt-2 md:mt-6 mb-4 md:mb-10 md:w-[80%] lg:w-full">
               {content.collaborate}
             </Paragraph>
-            <div className="flex lg:flex-col xl:flex-row gap-10 lg:gap-4">
+            <div className="flex lg:flex-col xl:flex-row justify-center md:justify-normal gap-8 lg:gap-4 xl:gap-10">
               {CONTACTS.map((contact) => (
                 <ContactAnchor
                   key={contact.link}

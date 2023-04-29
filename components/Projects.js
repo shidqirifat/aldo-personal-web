@@ -7,6 +7,7 @@ import SeeMore from 'public/assets/icons/see-more.svg';
 import Anchor from './Anchor';
 import RoundedBottom from './RoundedBottom';
 import { useSelector } from 'react-redux';
+import { GLOBAL_DATA } from 'data/CONFIG';
 
 const ToggleCategory = ({ children, isActive, onClick }) => {
   return (
@@ -60,9 +61,7 @@ const Project = ({ title, description, categories, image, link }) => {
 };
 
 const MoreButton = ({ isExploration, isSmallDisplay }) => {
-  const link = isExploration
-    ? 'https://dribbble.com/raffialdo'
-    : 'https://medium.com/@raffialdo123';
+  const link = isExploration ? GLOBAL_DATA.dribble : GLOBAL_DATA.medium;
   const size = isSmallDisplay ? 10 : 20;
 
   return (

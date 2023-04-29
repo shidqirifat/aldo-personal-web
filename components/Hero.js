@@ -1,18 +1,19 @@
 import React from 'react';
 import Button from './Button';
-import { Paragraph } from './Text';
+import { Bold, Paragraph, TextButton } from './Text';
 import Email from 'public/assets/icons/email.svg';
 import Image from 'next/image';
 import Anchor from './Anchor';
 import RoundedBottom from './RoundedBottom';
 import { CONTENT as content } from 'data/HERO';
 import { useSelector } from 'react-redux';
+import { GLOBAL_DATA } from 'data/CONFIG';
 
 const EmailMeButton = ({ isSmallDisplay }) => {
   const size = isSmallDisplay ? 15 : 26;
 
   return (
-    <Anchor href="mailto:raffialdo123@gmail.com">
+    <Anchor href={`mailto:${GLOBAL_DATA.email}`}>
       <Button>
         <div className="flex items-center gap-2 md:gap-[10px]">
           <Image src={Email} alt="See more icon" width={size} height={size} />
@@ -36,20 +37,6 @@ const CheckProjectButton = () => {
     </Anchor>
   );
 };
-
-const TextButton = ({ isPrimary, children }) => {
-  return (
-    <h3
-      className={`font-medium text-sm sm:text-[22px] leading-5 md:leading-8 ${
-        isPrimary ? 'text-white-primary' : 'text-orange-primary'
-      }`}
-    >
-      {children}
-    </h3>
-  );
-};
-
-const Bold = ({ children }) => <span className="font-bold">{children}</span>;
 
 export default function Hero() {
   const displaySize = useSelector((state) => state.displaySize);
