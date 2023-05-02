@@ -52,8 +52,10 @@ export default function ContactUs() {
           </div>
         </div>
         <div className="flex justify-center lg:justify-between mt-6 md:mt-24 lg:mt-[120px]">
-          {displaySize.large && <TextLogo>Raffialdo</TextLogo>}
-          <div className="flex gap-3 md:gap-10">
+          {(displaySize.large || displaySize.extraLarge) && (
+            <TextLogo>Raffialdo</TextLogo>
+          )}
+          <div className="flex justify-between lg:justify-center w-full lg:w-auto gap-3 md:gap-10">
             {SOCIALS.map((social) => (
               <ContactAnchor key={social.link} href={social.link}>
                 {social.text}

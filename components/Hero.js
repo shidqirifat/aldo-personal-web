@@ -47,7 +47,7 @@ export default function Hero() {
         id="home"
         className="md:h-[calc(100vh-60px)] pt-28 md:pt-0 relative bg-white-primary"
       >
-        <div className="md:absolute md:bottom-[20%] max-w-6xl w-full lg:w-[1000px] px-6 md:center-both md:-mt-8">
+        <div className="md:absolute max-w-6xl w-full lg:w-[1000px] px-6 md:center-both md:!top-[60%]">
           <div className="text-center flex flex-col gap-2 md:gap-6">
             <Paragraph>{content.introduce}</Paragraph>
             <h1 className="font-semibold text-[32px] md:text-[100px] leading-[48px] md:leading-[120px] text-black-primary">

@@ -33,8 +33,8 @@ export default function About() {
     <>
       <div id="about" className="bg-white-primary">
         <div className="max-w-7xl mx-6 xl:mx-auto pt-24 md:pt-[218px] sm:pb-5 text-center md:text-left">
-          <div className="relative z-10">
-            <div className="w-full lg:w-[60%] relative z-0">
+          <div className="flex flex-col relative z-10">
+            <div className="w-full lg:w-[60%] static lg:relative z-0">
               <TextAbout>{content.meet}</TextAbout>
               <h1 className="text-black-primary text-[32px] md:text-[100px] leading-[48px] md:leading-[120px] font-semibold my-2 md:my-6">
                 {content.experience}
@@ -43,17 +43,16 @@ export default function About() {
                 {content.paragraph_1}
               </TextAbout>
             </div>
-            {(displaySize.large || displaySize.extraLarge) && (
-              <div className="absolute right-0 top-0 bottom-0 h-full w-[57%] -z-10">
-                <Image
-                  src="/assets/images/photo-about.png"
-                  alt="Photo About"
-                  fill
-                />
-              </div>
-            )}
+            <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 h-[250px] lg:h-full lg:w-[57%] lg:-z-10 mt-4">
+              <Image
+                src="/assets/images/photo-about.png"
+                alt="Photo About"
+                fill
+                className="object-contain object-bottom"
+              />
+            </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-6 mt-2 mb-6 md:mb-0 md:mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-6 mt-4 mb-6 md:mb-0 md:mt-8">
             <TextAbout>{content.paragraph_2}</TextAbout>
             <TextAbout>
               {displaySize.small

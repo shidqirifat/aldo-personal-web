@@ -31,7 +31,7 @@ const NavigationDrawer = ({
 }) => {
   return (
     <div
-      className={`bg-black-primary shadow-md absolute left-0 right-0 z-20 rounded-b-[30px] pb-2 ${
+      className={`bg-black-primary shadow-md absolute left-0 right-0 z-20 pb-2 ${
         isOpenDrawer
           ? 'opacity-100 top-[72px] visible'
           : 'opacity-0 top-14 invisible'
@@ -61,15 +61,15 @@ export default function NavigationMobile({ activeNavigation }) {
   return (
     <>
       <div className="fixed z-20 w-full">
-        <div className="bg-black-primary shadow-md flex justify-between p-6">
+        <div className="bg-black-primary shadow-md flex justify-between items-center p-6">
           <TextLogo>Raffialdo Bayu</TextLogo>
-          <div onClick={toggleOpenDrawer} className="relative w-6 h-6">
+          <button onClick={toggleOpenDrawer} className="relative w-6 h-6">
             <Image
               src={isOpenDrawer ? Close : Menu}
               alt={`${isOpenDrawer ? 'Close' : 'Hamburger'} Button`}
               fill
             />
-          </div>
+          </button>
         </div>
         <NavigationDrawer
           isOpenDrawer={isOpenDrawer}

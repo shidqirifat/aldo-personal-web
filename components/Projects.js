@@ -92,7 +92,10 @@ export default function Projects() {
 
   return (
     <>
-      <div id="projects" className="bg-white-primary pt-8 md:pt-[120px]">
+      <div
+        id="projects"
+        className="bg-white-primary -mt-4 md:mt-0 pt-20 md:pt-[120px]"
+      >
         <div className="max-w-7xl mx-6 xl:mx-auto">
           <div className="flex flex-col md:flex-row gap-4 items-center justify-between mb-6 md:mb-[60px]">
             <h1 className="text-black-primary font-semibold text-[32px] md:text-[80px] leading-[48px] md:leading-[120px]">
