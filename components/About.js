@@ -43,7 +43,7 @@ export default function About() {
                 {content.paragraph_1}
               </TextAbout>
             </div>
-            <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 h-[250px] lg:h-full lg:w-[57%] lg:-z-10 mt-6">
+            <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 h-[250px] lg:h-full lg:w-[57%] lg:-z-10 mt-6 lg:mt-0">
               <Image
                 src="/assets/images/photo-about.png"
                 alt="Photo About"
