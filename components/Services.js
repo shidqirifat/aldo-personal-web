@@ -11,7 +11,7 @@ const CardService = ({ title, icon, description, isSmallDisplay }) => {
   return (
     <div
       key={title}
-      className="text-center w-[100%] sm:w-[40%] lg:w-[30%] bg-white-primary rounded-[32px] py-6 md:py-10 px-5 md:px-4"
+      className="text-center w-[100%] sm:w-[40%] lg:w-[30%] bg-white-primary rounded-[32px] py-6 md:py-10 px-4"
     >
       <div className="bg-grey-primary h-20 md:h-[120px] w-20 md:w-[120px] rounded-full grid place-content-center mx-auto">
         <Image src={icon} alt={title} width={size} height={size} />
@@ -19,7 +19,7 @@ const CardService = ({ title, icon, description, isSmallDisplay }) => {
       <h2 className="text-black-primary font-semibold text-[32px] md:text-4xl leading-8 md:leading-[54px] mt-4 md:mt-8 mb-2 md:mb-4">
         {title}
       </h2>
-      <Paragraph>{description}</Paragraph>
+      <Paragraph className="!leading-5 md:!leading-8">{description}</Paragraph>
     </div>
   );
 };

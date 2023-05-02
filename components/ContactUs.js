@@ -43,7 +43,7 @@ export default function ContactUs() {
               ))}
             </div>
           </div>
-          <div className="min-h-[250px] md:min-h-[360px] min-w-[250px] md:min-w-[360px] relative">
+          <div className="min-h-[250px] md:min-h-[380px] min-w-[250px] md:min-w-[380px] relative">
             <Image
               src="/assets/images/photo-profil.png"
               alt="Photo Profil"
@@ -53,7 +53,7 @@ export default function ContactUs() {
         </div>
         <div className="flex justify-center lg:justify-between mt-6 md:mt-24 lg:mt-[120px]">
           {(displaySize.large || displaySize.extraLarge) && (
-            <TextLogo>Raffialdo</TextLogo>
+            <TextLogo>Raffialdo Bayu</TextLogo>
           )}
           <div className="flex justify-between lg:justify-center w-full lg:w-auto gap-3 md:gap-10">
             {SOCIALS.map((social) => (

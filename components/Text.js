@@ -3,7 +3,7 @@ import React from 'react';
 export const Paragraph = ({ children, className = '' }) => {
   return (
     <h3
-      className={`text-xs md:text-2xl leading-4 md:leading-[30px] text-black-secondary font-inter ${className}`}
+      className={`text-xs md:text-2xl leading-[18px] md:leading-[34px] text-black-secondary font-inter ${className}`}
     >
       {children}
     </h3>
