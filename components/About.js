@@ -43,7 +43,7 @@ export default function About() {
                 {content.paragraph_1}
               </TextAbout>
             </div>
-            <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 h-[250px] lg:h-full lg:w-[57%] lg:-z-10 mt-4">
+            <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 h-[250px] lg:h-full lg:w-[57%] lg:-z-10 mt-6">
               <Image
                 src="/assets/images/photo-about.png"
                 alt="Photo About"
@@ -52,7 +52,7 @@ export default function About() {
               />
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-6 mt-4 mb-6 md:mb-0 md:mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-6 mt-6 mb-6 md:mb-0 md:mt-8">
             <TextAbout>{content.paragraph_2}</TextAbout>
             <TextAbout>
               {displaySize.small
