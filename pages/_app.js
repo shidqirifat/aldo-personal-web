@@ -10,9 +10,9 @@ export default function App({ Component, pageProps }) {
         <title>Raffialdo Bayu - Personal Website</title>
         <link
           rel="icon"
-          type="image/svg"
+          type="image/png"
           sizes="32x32"
-          href="/favicon.svg"
+          href="/favicon.png"
         ></link>
       </Head>
       <Provider store={store}>
