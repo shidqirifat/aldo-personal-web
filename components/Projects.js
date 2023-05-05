@@ -36,7 +36,7 @@ const TextToggleButton = ({ children, isActive }) => {
 const Project = ({ title, description, categories, image, link }) => {
   return (
     <Anchor href={link} isExternal className="group project-item">
-      <div className="relative h-[250px] md:min-h-[500px] w-full">
+      <div className="relative aspect-[5/4]">
         <div className="absolute z-10 top-4 md:top-6 left-4 md:left-6 flex gap-2 md:gap-4">
           {categories.map((category) => (
             <div

@@ -18,7 +18,7 @@ const EmailMeButton = ({ isSmallDisplay }) => {
         <div className="flex items-center gap-2 md:gap-[10px]">
           <Image src={Email} alt="See more icon" width={size} height={size} />
           <TextButton>
-            <Bold>EMail</Bold> me
+            <Bold>Email</Bold> me
           </TextButton>
         </div>
       </Button>
