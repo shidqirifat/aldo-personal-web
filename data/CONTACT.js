@@ -1,32 +1,30 @@
-import { GLOBAL_DATA } from './CONFIG';
-
 export const SOCIALS = [
   {
     text: 'Instagram',
-    link: GLOBAL_DATA.instagram,
+    link: process.env.NEXT_PUBLIC_INSTAGRAM,
   },
   {
     text: 'Linkedln',
-    link: GLOBAL_DATA.linkedin,
+    link: process.env.NEXT_PUBLIC_LINKEDIN,
   },
   {
     text: 'Dribbble',
-    link: GLOBAL_DATA.dribble,
+    link: process.env.NEXT_PUBLIC_DRIBBLE,
   },
   {
     text: 'Medium',
-    link: GLOBAL_DATA.medium,
+    link: process.env.NEXT_PUBLIC_MEDIUM,
   },
 ];
 
 export const CONTACTS = [
   {
-    text: GLOBAL_DATA.email,
-    link: `mailto:${GLOBAL_DATA.email}`,
+    text: process.env.NEXT_PUBLIC_EMAIL,
+    link: `mailto:${process.env.NEXT_PUBLIC_EMAIL}`,
   },
   {
-    text: GLOBAL_DATA.phone_number_with_space,
-    link: `https://api.whatsapp.com/send?phone=${GLOBAL_DATA.phone_number}`,
+    text: process.env.NEXT_PUBLIC_PHONE_NUMBER_WITH_SPACE,
+    link: `https://api.whatsapp.com/send?phone=${process.env.NEXT_PUBLIC_PHONE_NUMBER}`,
   },
 ];
 

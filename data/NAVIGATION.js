@@ -1,5 +1,3 @@
-import { GLOBAL_DATA } from './CONFIG';
-
 export const NAVIGATIONS = [
   {
     label: 'Home',
@@ -22,7 +20,7 @@ export const NAVIGATIONS = [
   },
   {
     label: 'Resume',
-    link: GLOBAL_DATA.resume,
+    link: process.env.NEXT_PUBLIC_RESUME,
     isExternal: true,
   },
   {

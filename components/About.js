@@ -6,7 +6,6 @@ import { CONTENT as content } from 'data/ABOUT';
 import { useSelector } from 'react-redux';
 import Anchor from './Anchor';
 import Button from './Button';
-import { GLOBAL_DATA } from 'data/CONFIG';
 
 const TextAbout = ({ children, className }) => (
   <Paragraph className={`!text-black-secondary ${className}`}>
@@ -16,7 +15,7 @@ const TextAbout = ({ children, className }) => (
 
 const ResumeButton = () => {
   return (
-    <Anchor href={GLOBAL_DATA.resume} isExternal>
+    <Anchor href={process.env.NEXT_PUBLIC_RESUME} isExternal>
       <Button isPrimary>
         <TextButton isPrimary>
           Download <Bold>resume</Bold>🎉

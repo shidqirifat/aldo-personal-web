@@ -7,13 +7,12 @@ import Anchor from './Anchor';
 import RoundedBottom from './RoundedBottom';
 import { CONTENT as content } from 'data/HERO';
 import { useSelector } from 'react-redux';
-import { GLOBAL_DATA } from 'data/CONFIG';
 
 const EmailMeButton = ({ isSmallDisplay }) => {
   const size = isSmallDisplay ? 15 : 26;
 
   return (
-    <Anchor href={`mailto:${GLOBAL_DATA.email}`}>
+    <Anchor href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}>
       <Button>
         <div className="flex items-center gap-2 md:gap-[10px]">
           <Image src={Email} alt="See more icon" width={size} height={size} />
